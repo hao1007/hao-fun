@@ -4,7 +4,7 @@ class Solution:
             return False
         y = 0
         v = x
-        while v > 0:
+        while v:
             y *= 10
             y += v % 10
             v //= 10

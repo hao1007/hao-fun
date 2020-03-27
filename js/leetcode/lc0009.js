@@ -2,7 +2,7 @@ var isPalindrome = function (x) {
     if (x < 0) return false;
     let y = 0;
     let v = x;
-    while (v > 0) {
+    while (v) {
         y *= 10;
         y += v % 10;
         v = Math.floor(v / 10);

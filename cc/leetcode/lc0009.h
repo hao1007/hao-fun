@@ -9,7 +9,7 @@ public:
         }
         int y{0};
         int v{x};
-        while (v > 0)
+        while (v)
         {
             y *= 10;
             y += v % 10;

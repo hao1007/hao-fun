@@ -4,7 +4,7 @@ class Solution:
         if negative:
             x = -x
         value = 0
-        while x > 0:
+        while x:
             value *= 10
             value += x % 10
             x //= 10
