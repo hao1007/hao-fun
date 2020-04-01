@@ -7,7 +7,8 @@ var reverse = function (x) {
         value += x % 10;
         x = Math.floor(x / 10);
     }
-    return negative ? -value : value;
+    if (negative) value = -value;
+    return (value > 0x7fffffff || value < -0x80000000) ? 0 : value;
 };
 
 module.exports = {

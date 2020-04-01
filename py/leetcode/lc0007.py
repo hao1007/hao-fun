@@ -8,4 +8,6 @@ class Solution:
             value *= 10
             value += x % 10
             x //= 10
-        return -value if negative else value
+        if negative:
+            value = -value
+        return 0 if (value > 0x7fffffff or value < -0x80000000) else value
