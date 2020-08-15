@@ -1,5 +1,5 @@
 import unittest
-import leetcode.lc0009 as lc
+from leetcode import lc0009 as lc
 
 
 class Test(unittest.TestCase):
