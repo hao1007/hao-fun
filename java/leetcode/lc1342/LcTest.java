@@ -21,7 +21,6 @@ public class LcTest {
     }
 
     static void test(int num, int expected) {
-        int value = solution.numberOfSteps(num);
-        assertEquals(expected, value, expected + " != " + value);
+        assertEquals(expected, solution.numberOfSteps(num));
     }
 }
